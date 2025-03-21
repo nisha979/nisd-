@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>main page</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="https:\\cdnjs.cloudflare.com\ajax\libs\animate.css\3.7.2\animate.min.css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        // Create a popup div
+        let popup = document.createElement("div");                            
+        popup.style.position = "fixed";
+        popup.style.top = "40%";
+        popup.style.left = "50%";
+        popup.style.transform = "translate(-50%, -50%)";
+        popup.style.background = "white";
+        popup.style.padding = "50px";
+        popup.style.borderRadius = "10px";
+        popup.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.3)";
+        popup.style.zIndex = "1000";
+        popup.style.textAlign = "center";
+        
+        popup.innerHTML = `
+        <div style="margin-top:-40px;">
+         &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button type="button" class="btn-close" style="background-color: white; " id="closePopup" aria-label="Close"></button></div>
+         <br>
+            <h1>Welcome to City Hospital!</h1>
+    
+            <p> Subscribe to our alerts and recevive<br> regular healthcare information</p>
+            <button  class="thanks">Subscribe</button>
+            <br>
+  
+   
+   
+
+
+           
+        `;
+        
+        document.body.appendChild(popup);
+        
+        // Close button functionality
+        document.getElementById("closePopup").addEventListener("click", function () {
+            popup.style.display = "none";
+        });
+    }, 300000); //  seconds delay
+});
+
+</script>
+
+ <section>
+  <header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" >
+                <nav class="navbar navbar-expand-lg navbar-light  bg-light fixed-top ">
+                   <a class="navbar-brand" href="#" style="padding-left: 2px;">
+      <img src="imggg/Screenshot_20250321-154150.jpg"style=" width: 70px;  height: 50px;border:5px solid  #064565;border-radius: 50%;">
+      City Hospital
+    </a>
+                  
+                    <button class="navbar-toggler">
+                        <span class="navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#my"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="my">
+                        <ul  class="navbar-nav ms-4">
+            <li class="nav-item px-3 py-2"><a href="home.html" class="nav-link" style="color: #064565">HOME</a></li>
+            <li class="nav-item px-3 py-2"><a href="href aout.html" class="nav-link" style="color: #064565">ABOUT US</a></li>
+            <li class="nav-item px-3 py-2 dropdown"><a href="research.html" class="nav-link" style="color: #064565">ACADEMICS & RESEARCH</a></li>
+            <li class="nav-item dropdown px-3 py-2"><a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" style="color: #064565">CHILD CARE</a>
+              <div class="dropdown-menu">
+                
+                <a href="science.html" class="dropdown-item">cardiac science</a>
+                <a href="bonemarrow.html" class="dropdown-item">bone Marrow Transplant Unit</a>
+               
+                <a href="childpsychology.html" class="dropdown-item"> Child Psycology</a>
+                <a href="childnutrition.html" class="dropdown-item">Children Nutrition</a>
+               
+                <a href="childspeech.html" class="dropdown-item"> Speech & Language THerapy</a>
+              </div>
+
+
+            </li>
+            <li class="nav-item dropdown px-3 py-2"><a href="" style="color: #064565" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">HEALTH</a>
+              <div class="dropdown-menu">
+                <a href="health.html" class="dropdown-item"> Health Charts - BP, Weigh</a>
+                <a href="prevetive.html" class="dropdown-item">Preventive Health Check Ups</a>
+               
+              </div>
+
+
+            </li>
+              <li class="nav-item px-3 py-2"><a href="appoitment.html" class="nav-link" style="color: #064565">APPOINTMENT</a></li>
+              <li class="nav-item "><button class="btn  nav-link"  style="width: 250px; height: 50px; background-color: red;color:white;"type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">EMERGENCY</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: red;"> 
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" style="color: white;" id="offcanvasRightLabel">EMERGENCY</h5>
+    <button type="button" class="btn-close" style="background-color: white;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="row">
+        <span>
+          <h1>24/7</h1>
+        +91-11-44448888</span>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <span><h1>Malviya Nagar</h1>
+            &nbsp; &nbsp;+91 9898987676</span>
+      </div>
+      <div class="col">
+        <span>
+          <h1>Dilshad Garden</h1>
+               &nbsp; &nbsp; +91 9898987676</span>
+      </div>
+
+    </div>
+  </div>
+</div>
+      </div>
+ </li>
+
+          
+          </ul>
+                        
+                    </div>
+                </nav>
+                
+
+            </div>
+        </div>
+    </div>
+
+
+</header>
+
+		</section>
+    <br><br><br>
+
+	<!-- -----slider----- -->
+	<div class="container-fluid" > 
+	
+	<div id="carouselExampleCaptions" class="carousel slide" style="position: relative;">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item  c-item active">
+      <img src="imggg/sliderpos.jpg" class="d-block w-100 c-img" alt="...">
+      <div class="carousel-caption">
+      	 <a href="Appoitment.html"><button  class="btn  animated bounceInRight" style="animation-delay: 1s; margin: 50px; padding: 10px;">Appointment</button></a>
+      	 <br>
+        <span class="animated bounceInRight" style="animation-delay: 1s;color: #064565;font-weight: bold; font-size: 36px;">Best Medical  Services</span>
+        <br>
+        <p class="animated fadeInUp" style="animation-delay:2s;color:black;">Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="imggg/labb.jpg " class="d-block w-100 c-img" alt="...">
+      <div class="carousel-caption">
+     <a href="Appoitment.html"><button  class="btn  animated bounceInRight" style="animation-delay: 1s; margin: 150px; padding: 10px;">Appointment</button></a>
+       
+      
+     
+     
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="imggg/hospital banner.jpg" class="d-block w-100 c-img" alt="...">
+      
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- heading -->
+<div class="container service">
+	<div class="row our ">
+		<span class="animated   fadeInUp" style=" text-decoration: underline; animation-delay: 1s;">OUR SERVICES</span>
+		 
+	</div>
+	<div class="animated fadeInUp" style="animation-delay:2s; text-align: center;">Keep your life simple. Focus on your health,<br> your mission, and your people. That’s it.</div>
+</div>
+<br>
+
+
+
+
+
+
+
+<!----------cards----- -->
+
+<div class="container " >
+	<div class="row">
+		<!-- card 1 -->
+		<div class=" col-md-4  ">
+			<div class="card  border-grey animated fadeInLeft">
+	<img src="imggg/3126541_448416-PEXTTD-429.jpg "class="card-img-top w-100" style="height: 200px " >
+				<h3 class="card-title" style="text-align: center; font-weight: bold;">24/7 Ambulance</h3>
+<p class="card-text" style="padding-left: 10px; ">Ambulance Services in Delhi: At City Hospital. </p>
+<a href="ambulance.html">
+  <button class=" ms-2 btn">Read more&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill "  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></button>
+</a>
+			 </div>
+
+		</div>
+		<!-- <div class="col-md-1"></div>-->
+		<!-- card2 -->
+		<div class=" col-md-4  mb-5">
+			<div class="card  border-grey animated fadeInUp">
+	<img src="imggg/lab.jpg "class="card-img-top" style="height:200px " >
+				<h3 class="card-title" style="text-align: center; font-weight: bold;">Laboratory</h3>
+          <p class="card-text" style="padding: 2px;">Our doctors work full-time and exclusively across City hospital.</p>
+              <a href="lab.html"><button class=" ms-2 btn">Read more&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill"  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></button></a>
+			 </div>
+		
+
+
+
+    </div>
+   <!--  <div class="col-md-1"></div> -->
+    <!-- card3 -->
+    <div class=" col-md-4 mb-5">
+			<div class="card  border-grey animated fadeInRight " >
+	<img src="imggg/blue.png "class="card-img-top" style="height:220px " >
+				<h3 class="card-title" style="text-align: center; font-weight: bold;">Covid-19</h3>
+              <p class="card-text" style="text-align: justify;margin:3px;">The first wave of COVID-19 began in Wuhan, China in late 2019 and quickly ...<br>
+                
+              </p>
+
+              <a href="covid.html"><button class=" ms-2 btn ">Read more&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill "  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></button></a>
+			 </div>
+   
+     	
+
+ 
+  </div>
+</div>
+</div>
+</div>
+<!-- space -->
+<div class="container-fluid" >
+  <div class="row">
+     <div class="col-12"  style="height: 50px">
+       
+     </div>
+  </div>
+  
+
+</div>
+<!-- Awards -->
+<div class="container-fluid">
+  <div class="row">
+    <div  class=" col-md-11 col-lg-5" style="padding-left: 50px;">
+      <h3 class="animated bounceInLeft" style="text-align: center; text-align: justify; text-decoration: underline; font-size: 50px;">Doctors Awards</h3>
+      <p  style="word-spacing: 10px;line-height: 30px;"> <strong>IICS Computer Education Receives “Most Trusted Brand” Award from Arjun Kapoor.</strong> IICS Computer Education has added another feather to its cap by being honored with the prestigious “Most Trusted Brand” award. The award was presented by Bollywood star Arjun Kapoor at a glittering ceremony attended by industry leaders, educators, and technology enthusiasts.
+        <br>
+        <br>
+
+This recognition reflects the institution’s unwavering commitment to delivering quality computer education and empowering students with the skills needed to thrive in a digital world. Over the years, IICS has built a reputation for excellence through its innovative teaching methods, state-of-the-art infrastructure, and a dedicated focus on student success.g></p><br><br> <button class="btn"  ><a href="award.html"style="text-decoration: none; color:#064565;" >Read More&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill  arrow"  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></a></button>
+<br><br>
+     </div>
+     
+     <div class="col-md-11 col-lg-6 award"> 
+     <img   src="imggg/awardbanner.jpg" class ="  w-100"; style="cursor: pointer; border-radius: 90px;"> </div>
+     <div>  
+
+     </div>
+   
+   
+ 
+
+   </div>
+
+   <!--  space -->
+    <div class="container-fluid" >
+  <div class="row">
+     <div class="col-12"  style="height: 150px">
+       
+     </div>
+  </div>
+  
+
+</div>
+<!-- health cart -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-11 col-lg-6 award"> 
+     <img   src="imggg/health banner.jpg" class =" w-100"; style="cursor: pointer; border-radius: 90px;"> </div>
+     <div  class=" col-md-11 col-lg-5" style="padding-left: 50px;">
+      <h3 class="animated bounceInRight" style=" text-align: justify; text-decoration: underline; font-size: 50px;">Health Chart</h3>
+      <p  class="text-justify" style="word-spacing: 10 px;line-height: 30px;"> <strong>IICS Computer Education Receives “Most Trusted Brand” Award from Arjun Kapoor.</strong> IICS Computer Education has added another feather to its cap by being honored with the prestigious “Most Trusted Brand” award. The award was presented by Bollywood star Arjun Kapoor at a glittering ceremony attended by industry leaders, educators, and technology enthusiasts.
+        <br>
+        <br>
+
+This recognition reflects the institution’s unwavering commitment to delivering quality computer education and empowering students with the skills needed to thrive in a digital world. Over the years, IICS has built a reputation for excellence through its innovative teaching methods, state-of-the-art infrastructure, and a dedicated focus on student success.g></p><br><br><br>
+  <button class="btn"  ><a href="health.html"style="text-decoration: none; color:#064565;" >Read More&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill  arrow"  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></a></button>
+     </div>
+
+     
+     <!--  space -->
+    <div class="container-fluid" >
+  <div class="row">
+     <div class="col-12"  style="height: 90px">
+       
+     </div>
+  </div>
+  
+
+</div>
+<!-- /// -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4 col-sm-4"><img src="imggg/doctor-119089634.jpg"class ="w-100 im"; style="cursor: pointer; border-radius: 100%;"></div>
+    <div class="col-sm-12  col-lg-8"> <p style="font-size: 40px;">Patient-Centric Care and Cutting-Edge ResearchThe City Hospital Promise</p>
+      <br>
+      <br>
+      <span style="font-size: 20px;">Dr.(Prof.) S.P Rana</span>
+      <br>
+      <span style="font-size: 15px;">Chairman- Board of Trustees</span><br>
+      <br><br><br>
+     
+    </div>
+  </div>
+</div>
+<!--  space -->
+    <div class="container-fluid" >
+  <div class="row">
+     <div class="col-12"  style="height: 90px">
+       
+     </div>
+  </div> 
+  
+
+</div>
+<!-- ///  -->
+
+<!-- 2nd image dr.prof. -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12  col-lg-8"> <p style="font-size: 40px;">Patient-Centric Care and Cutting-Edge ResearchThe City Hospital Promise</p>
+  <br>
+  <br>
+  <br>
+      <span style="font-size: 20px;">Dr.(Prof.) S.P Rana</span>
+      <br>
+      <span style="font-size: 15px;">Chairman- Board of Trustees</span><br> <br>  <br>  <br> <br>  <br> 
+    </div>
+
+
+      <div class="col-md-4 col-sm-4"><img src="imggg/doctor-1775639085.jpg"class ="w-100 im"; style="cursor: pointer; border-radius: 100%;"></div> 
+    
+    </div>
+  </div>
+</div>
+<br><br>
+
+
+<!-- Testimoials-->
+<div class="container-fluid" style="background-color:grey;">
+  <div class="row me-auto">
+    <span style="text-align: center;font-size: 44px; text-decoration: underline; font-weight: bold;color:white;" class="zoom">Testimonials from our patients</span>
+  </div>
+  <br>  <br><br><br>  <br>  
+  <div class="row" style="padding-left:; padding-right:;">
+    <div class="col-md-4   col-lg-4 col-xs-12"><p style="word-spacing: 10px;line-height: 30px; color: white;"> <strong>hello world"IICS Computer Education provides outstanding training,</strong> professional instructors, and practical experience. A great platform for anyone looking to excel in computer education!"</p>
+      <br>
+      <img class="rotate  revimg"   src="imggg/girl .jpg" ><span   class="animated fadeInUp"style="margin-left:1%; font-weight:bold; color: white;">  radhika</span>
+
+</div>
+
+
+
+    <div class="col-md-4  col-lg-4 col-xs-12"><p style="word-spacing: 12px;line-height: 30px; color: white;"> <strong>hello world"IICS Computer Education provides outstanding training,</strong> professional instructors, and practical experience. A great platform for anyone looking to excel in computer education!"</p>
+      <br>
+      <img class="rotate revimg" src="imggg/boy.jpg"><span class="animated fadeInUp" style="margin-left:1%;font-weight:bold; color: white;"> Himanshu</span>
+      
+</div>
+
+
+    <div class="col-md-4  col-lg-4 col-xs-12"><p style="word-spacing: 12px;line-height: 30px; color: white;"> <strong>hello world"IICS Computer Education provides outstanding training,</strong> professional instructors, and practical experience. A great platform for anyone looking to excel in computer education!"</p>
+            <br>
+      <img class="rotate revimg" src="imggg/girl2.jpg"><span  class="animated fadeInUp"style="margin-left:1%;font-weight:bold; color: white;"> sakshi</span>
+      
+</div>
+  </div>
+</div>
+
+
+
+     
+   
+
+
+<!-- //// -->
+ <!--  space -->
+    <div class="container-fluid" >
+  <div class="row">
+     <div class="col-12"  style="height: 90px">
+       
+     </div>
+  </div>
+  
+
+</div>
+<!-- //// -->
+<div class="container-fluid">
+  <h1 class="animated bounceInRight"style="animation-delay: 1s;font-weight: bold;font-size:50px; text-align:center; text-decoration:underline;">Our Centres of Excellence</h1>
+<br>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  <div class="col">
+
+    <div class="card">
+      <img src="imggg/doctor-4303020_1280.jpg" class="card-img-top" style="height: 220px;" alt="...">
+      <div class="card-body">
+        <a href="blood.html" style="text-decoration: none; color: black;"><h5 class="card-title">Blood Presure</h5></a>
+        <p class="card-text">Blood pressure is the pressure of circulating blood against the walls of blood vessels. </p>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imggg/orthodontist-287285_1280.jpg" class="card-img-top" style="height: 220px;" alt="...">
+      <div class="card-body">
+        <a href=" dentist.html" style="text-decoration: none; color: black;"><h5 class="card-title">Dentist</h5></a>
+        <p class="card-text">A dentist takes care of your oral health issues, which include problems of your mouth, jaw, teeth, and gums. </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imggg/father-5093047_1280.jpg" class="card-img-top" style="height: 220px;" alt="...">
+      <div class="card-body">
+       <a href="care.html"style="text-decoration: none;color: black;"> <h5 class="card-title">Child Care</h5></a>
+        <p class="card-text">Taking care of a child to prevent diseases</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="imggg/eye-doctor-with-female-patient-examination-modern-clinic-ophthalmologist-is-using-special-medical-equipment-eye-health (1).jpg" class="card-img-top"     style="height:200px;" alt="...">
+      <div class="card-body">
+        <a href=" eye checkup.html" style="text-decoration:none;color: black;"><h5 class="card-title ">Eye Checkup</h5></a>
+        <p class="card-text">Ophthalmology is a medical speciality that deals with the diagnosis, treatment, and management of eye-related diseases and conditions.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+ <!--  space -->
+    <div class="container-fluid" >
+  <div class="row">
+     <div class="col-12"  style="height: 90px">
+       
+     </div>
+  </div>
+  
+
+</div>
+<!-- carousels 3  -->
+ <section>
+  <div class="container">
+    <div class="row">
+      <h1 class="animated bounceInLeft" style="animation-delay: 1s;font-weight: bold;font-size:50px; text-align:center; text-decoration:underline;"> Events</h1>
+      
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-5" >
+           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner" style="border-radius:40px;">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="imggg/Screenshot_20250125-123452.jpg" class="d-block  imagesl w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imggg/20250125-123501.jpg" class="d-block imagesl  w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imggg/Screenshot_20250125-123459.jpg" class="d-block imagesl  w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 mb-5">
+<div id="carouselExampleIndicator" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner"style="border-radius:40px;">
+    <div class="carousel-item active"data-bs-interval="500">
+      <img src="imggg/Screenshot_.jpg" class="d-block imagesl w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imggg/125-123513.jpg" class="d-block imagesl w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imggg/125-123516.jpg" class="d-block  imagesl w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imggg/Screenshot_20250125-123504.jpg" class="d-block  imagesl w-100" alt="...">
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicator" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="col-lg-4 col-md-12 mb-5">
+<div id="carouselExampleIndicato" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicato" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicato" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicato" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner"style="border-radius:40px;">
+    <div class="carousel-item active" data-bs-interval="200">
+      <img src="imggg/125-214935.jpg" class="d-block imagesl  w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imggg/125-214924.jpg" class="d-block  imagesl w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="imggg/Screenshot_202.jpg" class="d-block imagesl  w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicato" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicato" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+
+
+    </div>
+  </div>
+ </section>
+ <!--  space -->
+    <div class="container-fluid" >
+  <div class="row">
+     <div class="col-12"  style="height: 90px">
+       
+     </div>
+  </div>
+  
+
+</div>
+
+<!-- //blogs// -->
+ 
+
+  <div class="container-fluid">
+    <div class="row">
+      <h1  class=" zoom" style="font-weight: bold;font-size:50px; text-align:center; text-decoration:underline;">Blogs</h1>
+       <p style="text-align: center;">Discover our most recent health articles provided by our reliable experts.</p></div>
+    <hr>
+    <div class="row " style="margin:50px;">
+      <div class=" col-md-12 col-lg-4 card box "><img src="imggg\family-2485714_1280.jpg" class="card-img-top  blogcard " alt="...">
+        <div class="card-body">
+      <span>Centre of Excellence,Doctor &nbsp; &nbsp; &nbsp; &nbsp; THu,26-Dec-2024</span>
+      <hr>
+      <a href="" style="text-decoration: none; color: black;"><h5>Tips for Fostering Secure Attachment with Your Child</h5>
+        <p>Building Strong Bonds: Tips for Fostering Secure Attachment with Your ChildMy son doesn’t share anything with me. He shuts himself in his room</p></a>
+      <br><br>
+      <div><button class="btn"><a href="familyblog.html"style="text-decoration: none; color:#064565;" >Read More&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill "  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></a></button></div> 
+      
+    </div></div>
+         <div class=" col-md-12 col-lg-4 card box"><img src="imggg\handwash.jpg" class="card-img-top blogcard " alt="...">
+        <div class="card-body">
+          <span>Centre of Excellence,Doctor  &nbsp; &nbsp; &nbsp; &nbsp; THu,26-Dec-2024</span>
+          <hr>
+      <a href="" style="text-decoration: none; color: black;"><h5>The Importance of Hand Hygiene in Children: A Parent’s Guide.</h5>
+      <p>The Importance of Hand Hygiene in Children: A Parent’s GuideHand hygiene  ..</p></a>
+      
+      <div>
+      <button class="btn"><a href="handwash.html"style="text-decoration: none; color:#064565;" >Read More&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill "  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></a></button>
+    </div>
+      
+    </div>
+  </div>
+      <div class="col-md-12 col-lg-4 card box"><img src="imggg/girl-5425872_1280.jpg" class="card-img-top blogcard " alt="..." >
+        <div class="card-body">
+          <span>Centre of Excellence,Doctors  &nbsp; &nbsp; &nbsp; &nbsp; THu,26-Dec-2024</span>
+           <hr>
+       <a href="" style="text-decoration: none; color: black;"><p>Screen Time is the total time spent per day in viewing  screen</p></a>
+        <br><br>
+        <div><button class="btn"><a href="screen.html"style="text-decoration: none; color:#064565;" >Read More&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill "  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></a></button></div>
+        </div>
+</div>
+ </div>
+  <div class="row " style="margin:50px;">
+      <div class=" col-md-12 col-lg-4  card box"><img src="imggg/thesugar.jpg" class="card-img-top  blogcard " alt="...">
+        <div class="card-body">
+      <span>Centre of Excellence,Doctor &nbsp; &nbsp; &nbsp; &nbsp; THu,26-Dec-2024</span>
+      <hr>
+      <a href="" style="text-decoration: none; color: black;"><h5>High and Low Blood Pressure: Symptoms, Causes & Preventing Tips</h5>
+        <p>Blood pressure is a critical factor in maintaining your overall health. When blood pressure is either too high (hypertension) or too low,...</p></a>
+      <br><br>
+      <div><button class="btn"><a href="familyblog.html"style="text-decoration: none; color:#064565;" >Read More&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill "  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></a></button></div> 
+      
+    </div></div>
+         <div class=" col-md-12 col-lg-4  card box"><img src="imggg\pink.jpg" class="card-img-top blogcard " alt="...">
+        <div class="card-body">
+          <span>Centre of Excellence,Doctor  &nbsp; &nbsp; &nbsp; &nbsp; THu,26-Dec-2024</span>
+          <hr>
+      <a href="" style="text-decoration: none; color: black;"><h5>Advances in Cancer Treatment: Empowering Your Immune System</h5>
+      <p>Learn about advances in cancer treatment with immunotherapy and hormonal therapy, providing effective,..</p></a>
+      
+      <div>
+      <button class="btn"><a href="cancer.html"style="text-decoration: none; color:#064565;" >Read More&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill "  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></a></button>
+    </div>
+      
+    </div>
+  </div>
+      <div class="col-md-12 col-lg-4 card box"><img src="imggg/mental.jpg" class="card-img-top blogcard " alt="..." >
+        <div class="card-body">
+          <span>Metal Health Crisis:Challeges &nbsp; &nbsp; &nbsp; THu,26- Dec-2024</span>
+           <hr>
+       <a href="" style="text-decoration: none; color: black;"><p>Learn how emergency services manage mental health crisis with immediate support... </p></a>
+        <br><br>
+        <div><button class="btn"><a href=""style="text-decoration: none; color:#064565;" >Read More&nbsp; &nbsp;<svg  xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#064565" class="bi bi-arrow-right-circle-fill "  viewBox="0 0 16 16">
+  <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+</svg></a></button></div>
+        </div>
+</div>
+ </div>
+</div>
+<br>
+<!-- pagiation -->
+<section>
+  <div class="container">
+    <div class="row">
+     <nav aria-label="Page navigation example">
+       <ul class="pagination">
+       <li class="page-item">
+         <a class="page-link" href="home.html" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="blogpage.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="pagination2.html">2</a></li>
+    <li class="page-item">
+      <a class="page-link" href="health.html" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+</div>
+
+</section>
+<br>
+<!-- video -->
+
+<section>
+  <div class="container-fluid">
+  <div class="row">
+    <h1 style="font-weight: bold;font-size:50px; text-align:center; text-decoration:underline;">Latest Video Articles</h1>
+      <p style="text-align: center;">Embark on a journey of inspiration and hope with our patient success stories, complemented by informative videos from our dedicated 
+        <br>doctors</p><hr>
+   </div>
+   <div class="row">
+     <div class="col-lg-4  col-md-4 mb-4">
+        <div class="embed-responsive embed-responsive-16by9">
+<iframe   width="560" height="315"class="embed-responsive-item" src="https://www.youtube.com/embed/J1ax4tZGijs?si=xiZCBGYjpSbtp8xP" allowfullscreen></iframe></div>
+       
+     </div>
+     <div class="col-lg-2 col-md-0 mb-4"></div>
+     <div class="col-lg-6">
+         <div class="embed-responsive embed-responsive-16by9 ">
+<iframe   width="560" height="315"class="embed-responsive-item" src="https://www.youtube.com/embed/cRWCHwt4_xQ?si=hGKxgqN2fn7Ct7Fd" allowfullscreen></iframe></div>
+     </div>
+   </div>
+   <div class="row">
+    
+   </div>
+  </div>
+</section>
+<br><br><br>
+<!-- building hospital  -->
+
+
+ <div class="container-fluid">
+   <div class="row">
+      <h1 style="font-weight: bold;font-size:50px; text-align:center; text-decoration:underline;">Our Hospitals and Clinics</h1>
+      <p style="text-align: center;">Rainbow Children's Hospital stands as a testament to the hospital's continual pursuit of excellence and <br>innovation, providing specialized care for women and children</p>
+   </div>
+ </div>
+<!--emergenncyy  -->
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-4" style="cursor: pointer;">
+			
+			<!-- 	<span style="font-size: 25px; padding: 20px; "></span> -->
+			<button class="btn "  style="width: 200px; height: 50px; background-color: red;color:white;"type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">EMERGENCY</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="background-color: red;"> 
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" style="color: white;" id="offcanvasRightLabel">EMERGENCY</h5>
+    <button type="button" class="btn-close" style="background-color: white;" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+  	<div class="row">
+  	    <span>
+  	    	<h1>24/7</h1>
+  	    +91-11-44448888</span>
+  	</div>
+  	<br>
+    <div class="row">
+    	<div class="col">
+    		<span><h1>Malviya Nagar</h1>
+            &nbsp; &nbsp;+91 9898987676</span>
+    	</div>
+    	<div class="col">
+    		<span>
+    			<h1>Dilshad Garden</h1>
+               &nbsp; &nbsp; +91 9898987676</span>
+    	</div>
+
+    </div>
+  </div>
+</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--  -->
+ <hr> 
+
+
+  
+<section class="bo">
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-4 mb-5">
+      <div class="car">
+        <img src="imggg/Screenshot_20250120_214546_WhatsApp.jpg" alt="image" class="w-100 buidimg">
+        <div class="intro">
+          <span>Malviya Nagar</span>
+          <p class="text">Best Children's Hospital & Maternity Hospital - Madhukar Rainbow Children's Hospital ,Delhi </p>
+          <a href=""><button class="btn m-2 ">Read More</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-4 mb-5">
+      <div class="car">
+        <img src="imggg/Screenshot_20250114_005348_WhatsApp.jpg" alt="image" class="w-100 buidimg">
+        <div class="intro">
+          <span>Panchsheel Park</span>
+          <p class="text">Best Children's Hospital & Maternity Hospital - Rainbow Children's Hospital , Delhi </p><br>
+          <a href=""><button class="btn m-2 ">Read More</button></a>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-4 mb-5">
+        <div class="car">
+        <img src="imggg/Screenshot_20250114_005437_WhatsApp.jpg" alt="image" class="w-100 buidimg">
+        <div class="intro">
+          <span>Dilshad Garden</span>
+          <p class="text">Best Children's Hospital & Maternity Hospital - Rainbow Children's Hospital , Delhi,</p><br>
+          <a href=""><button class="btn m-2 ">Read More</button></a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  </div>
+</section>
+<!--  -->
+<div class="container">
+  <div class="row">
+    <div class="col">
+      
+    </div>
+  </div>
+</div>
+</div>
+<!-- //// -->
+<div class="container-fluid" style="margin-top:-50px">
+ <div class="container" style="background-color:white; height: 170px; border-radius: 30px; box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+ <div class="row">
+  <div class="col-3">
+  <div style="padding-left:30px; padding-top: 10px;">
+  <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#064565" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M32 32c17.7 0 32 14.3 32 32l0 256 224 0 0-160c0-17.7 14.3-32 32-32l224 0c53 0 96 43 96 96l0 224c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-32-224 0-32 0L64 416l0 32c0 17.7-14.3 32-32 32s-32-14.3-32-32L0 64C0 46.3 14.3 32 32 32zm144 96a80 80 0 1 1 0 160 80 80 0 1 1 0-160z"/></svg><br>
+  <span> BEDS</span><br>  
+  <span class="pop">19+</span>
+
+</div>
+</div>
+  <div class="col-3">
+  <div style="  padding-top: 10px; ">
+<svg xmlns="http://www.w3.org/2000/svg"  width="50" height="50" fill="#064565" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-96 55.2C54 332.9 0 401.3 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7c0-81-54-149.4-128-171.1l0 50.8c27.6 7.1 48 32.2 48 62l0 40c0 8.8-7.2 16-16 16l-16 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l0-24c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 24c8.8 0 16 7.2 16 16s-7.2 16-16 16l-16 0c-8.8 0-16-7.2-16-16l0-40c0-29.8 20.4-54.9 48-62l0-57.1c-6-.6-12.1-.9-18.3-.9l-91.4 0c-6.2 0-12.3 .3-18.3 .9l0 65.4c23.1 6.9 40 28.3 40 53.7c0 30.9-25.1 56-56 56s-56-25.1-56-56c0-25.4 16.9-46.8 40-53.7l0-59.1zM144 448a24 24 0 1 0 0-48 24 24 0 1 0 0 48z"/></svg><br>
+<span> DOCTORS</span><br> 
+<span class="pop" style="">700+</span>
+
+</div></div>
+  <div class="col-3">
+    <div style=" padding-top:10px;">
+  <svg xmlns="http://www.w3.org/2000/svg"  width="50" height="50" fill="#064565"viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M192 48c0-26.5 21.5-48 48-48L400 0c26.5 0 48 21.5 48 48l0 464-80 0 0-80c0-26.5-21.5-48-48-48s-48 21.5-48 48l0 80-80 0 0-464zM48 96l112 0 0 416L48 512c-26.5 0-48-21.5-48-48L0 320l80 0c8.8 0 16-7.2 16-16s-7.2-16-16-16L0 288l0-64 80 0c8.8 0 16-7.2 16-16s-7.2-16-16-16L0 192l0-48c0-26.5 21.5-48 48-48zm544 0c26.5 0 48 21.5 48 48l0 48-80 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l80 0 0 64-80 0c-8.8 0-16 7.2-16 16s7.2 16 16 16l80 0 0 144c0 26.5-21.5 48-48 48l-112 0 0-416 112 0zM312 64c-8.8 0-16 7.2-16 16l0 24-24 0c-8.8 0-16 7.2-16 16l0 16c0 8.8 7.2 16 16 16l24 0 0 24c0 8.8 7.2 16 16 16l16 0c8.8 0 16-7.2 16-16l0-24 24 0c8.8 0 16-7.2 16-16l0-16c0-8.8-7.2-16-16-16l-24 0 0-24c0-8.8-7.2-16-16-16l-16 0z"/></svg><br>
+  <span> HOSPITALS </span><br>  
+  <span class="pop">1900+</span>
+</div>
+</div>
+   <div class="col-3">
+  <div style="  padding-top:9px; padding-left: 45px;">
+  <svg xmlns="http://www.w3.org/2000/svg"  width="50" height="50" fill="#064565" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm177.6 62.1C192.8 334.5 218.8 352 256 352s63.2-17.5 78.4-33.9c9-9.7 24.2-10.4 33.9-1.4s10.4 24.2 1.4 33.9c-22 23.8-60 49.4-113.6 49.4s-91.7-25.5-113.6-49.4c-9-9.7-8.4-24.9 1.4-33.9s24.9-8.4 33.9 1.4zM144.4 208a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm192-32a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg><br>  
+  <span>Happy Patients</span><br>
+  <span  class="pop" style="  padding-left: 12px">2K+</span>
+</div>
+</div>
+   </div>
+</div>
+</div>
+<br>  <br> <br>  <br> 
+
+
+<!-- footer -->
+
+<div class="container-fluid bg-dark">
+   <div class="container"style="padding-top: 15px;">
+     <div class="row">
+       <div class="col-lg-3 col-md-3 ">
+        <h1 class="text-info">Patient Care</h1>
+        <br>
+        <ul>
+        <li> <a href="Doctorday.html"  class="text-white">Doctor's Day</a></li>
+        <li> <a href="lab.html"  class="text-white">Lab</a></li>
+        <li> <a href=""  class="text-white">Insurance</a></li>
+        <li> <a href="Ambulance.html"  class="text-white">Ambulannce Service</a></li>
+      </ul>
+       </div>
+        <div class="col-lg-3 col-md-3 ">
+           <h1 class="text-info">Menu</h1><br>
+        <ul>
+        <li> <a href="home.html" class="text-white ">Home</a></li>
+        <li> <a href="href aout.html" class="text-white">About Us</a></li>
+        <li> <a href="research.html" class="text-white">Research</a></li>
+        <li> <a href="health.html.html"class="text-white">Health</a></li>
+      </ul>
+        </div>
+         <div class="col-lg-3 col-md-3 ">
+            <h1 class="text-info"> Corporate</h1><br>
+        <ul>
+        <li> <a href="award.html"  class="text-white">Award</a></li>
+        <li> <a href="quality.html"  class="text-white">Quality & Accreditation</a></li>
+        <li> <a href="history.html"  class="text-white">History of the hospital</a></li>
+          <li> <a href="home.html"  class="text-white">Events</a></li>
+      </ul>
+         </div>
+          <div class="col-lg-3 col-md-3 ">
+                <h1 class="text-info" style="padding-left: 5px;"> Specialities</h1><br>
+        <ul>
+        <li> <a href="href aout.html" class="text-white ">Emergency</a></li>
+        <li> <a href="dentist.html" class="text-white ">Pediatric Dentistry</a></li>
+        <li> <a href="childnutrition.html"  class="text-white ">Nutrition</a></li>
+          <li> <a href="science.html" class="text-white">Cardiologist</a></li>
+      </ul>
+          </div>
+     </div></div>
+   
+     <div class="row">
+     	<div class="col-lg-4  col-md-4 " style="height: 100px;">
+     		<a href="lab.html"><img src="imggg/play store.jpg" style="width: 100px;border-radius:5px;"></a>
+     	</div>
+     </div>
+    
+     </div>
+   </div>
+ </div>
+
+ <!--  -->
+<div class="container-fluid">
+	<div class="row bg-info">
+		<div class="col-lg-5 col-md-5" style="padding-top: 5px;">
+		
+			<svg xmlns="http://www.w3.org/2000/svg"  width="30" height="30"viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
+			&nbsp;
+			<svg xmlns="http://www.w3.org/2000/svg"  width="30" height="30"viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"/></svg>
+			&nbsp;
+			<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            &nbsp;
+			<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+				</div>
+				<br>
+		<div class="col-lg-7   col-md-5">
+			<p>Copyight @ 2025. All Righht Resserved By City Hospitals Ltd.</p>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+
+ 
+
